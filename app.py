@@ -60,7 +60,8 @@ if app.debug:
 else:
     UPLOAD_FOLDER = '/app/static/upload/'
     app.config['S3_BASE_FOLDER'] = ''
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ucocfesi3a50sp:pd433ef3bdce54e70213c225eeb3635b196db7de24db82f7bad98f30d35820253@c34u0gd6rbe7bo.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d6eq465ijvjihi'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://albitmotion:zL3)G01w@albitmotion.mysql.pythonanywhere-services.com/albitmotion$cvvmontreal'
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ucocfesi3a50sp:pd433ef3bdce54e70213c225eeb3635b196db7de24db82f7bad98f30d35820253@c34u0gd6rbe7bo.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d6eq465ijvjihi'
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['CURRENT_USER_ID'] = None
